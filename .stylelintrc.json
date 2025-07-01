@@ -4,9 +4,9 @@
     "no-extra-semicolons": true,
     "declaration-colon-space-after": "always",
     "indentation": 2,
-    "max-empty-lines": 3,
+    "max-empty-lines": 2,
     "string-quotes": "double",
-    "color-function-notation": "modern",
-    "alpha-value-notation": "number"
+    "color-function-notation": null, 
+    "alpha-value-notation": null
   }
 }
