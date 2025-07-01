@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code On the Runner
+      - name: Checkout Code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -18,11 +18,12 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install HTMLHint and Stylelint
-        run: npm install -g htmlhint stylelint stylelint-config-standard
+      - name: Install dependencies locally
+        run: |
+          npm install --save-dev stylelint stylelint-config-standard htmlhint
 
       - name: Run HTMLHint
-        run: htmlhint "**/*.html"
+        run: npx htmlhint "**/*.html"
 
       - name: Run Stylelint
-        run: stylelint "**/*.css"
+        run: npx stylelint "**/*.css"
