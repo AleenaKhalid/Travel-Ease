@@ -1,0 +1,28 @@
+name: Validate HTML/CSS on PR to Develop
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code On the Runner
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install HTMLHint and Stylelint
+        run: npm install -g htmlhint stylelint stylelint-config-standard
+
+      - name: Run HTMLHint
+        run: htmlhint "**/*.html"
+
+      - name: Run Stylelint
+        run: stylelint "**/*.css"
