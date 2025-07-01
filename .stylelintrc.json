@@ -7,7 +7,6 @@
     "max-empty-lines": 3,
     "string-quotes": "double",
     "color-function-notation": "modern",
-    "alpha-value-notation": "number",
-    "color-function-alias-notation": "never"
+    "alpha-value-notation": "number"
   }
 }
