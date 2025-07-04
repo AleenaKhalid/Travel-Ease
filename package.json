@@ -1,0 +1,19 @@
+{
+  "name": "travel-ease",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html",
+    "lint:html": "htmlhint '**/*.html'",
+    "lint:css": "stylelint '**/*.css'"
+  },
+  "author": "l1s22bsse0172",
+  "license": "ISC",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "parcel": "^2.15.4",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
