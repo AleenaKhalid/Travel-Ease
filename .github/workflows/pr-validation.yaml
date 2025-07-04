@@ -46,5 +46,5 @@ jobs:
         run: npm install -g parcel
 
       - name: Build Website With Parcel
-        run: parcel build "./src/index.html" --dist-dir "./dist"
+        run: parcel build "./src/index.html" --dist-dir "./dist" 
 
