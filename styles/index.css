@@ -1,11 +1,10 @@
-/* Reset default spacing and box model */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Body base styling */
   body {
     font-family: Arial, sans-serif;
     background-color: #f2f7f5;
@@ -13,8 +12,7 @@
     line-height: 1.6;
     padding: 10px;
   }
-  
-  /* Header and navigation */
+
   header {
     background-color: #004d4d;
     color: #ffffff;
