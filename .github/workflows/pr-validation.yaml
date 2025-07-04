@@ -9,7 +9,7 @@ on:
       - synchronize
 
 jobs:
-  linting:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository On the Runner 
