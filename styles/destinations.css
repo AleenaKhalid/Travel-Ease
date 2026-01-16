@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 20px;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+section {
+  margin-top: 30px;
+}
+
+h2 {
+  color: #00688B;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+article {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-left: 5px solid #2e8b57;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
